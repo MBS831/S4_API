@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
             justify-content: center;
             height: 100vh;
             background-color: rgb(243, 204, 204);
-        
+
         }
 
         #contenedor {
@@ -42,17 +43,46 @@
         #btnSeguent:hover {
             background-color: #0056b3;
         }
+
+        #btnScore1, #btnScore2, #btnScore3 {
+            background-color: #e08ebe;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
+    
     <div id="contenedor">
+
+        <div class="meteo">
+        <i class="temperature fa-solid fa-temperature-low"></i>|
+        <p class="temperature" id="meteo"></p>
+    </div>
+
         <h1>Preparat per riure? &#128514 </h1>
         <div id="acudit">
             <h1>Why was the broom late for the meeting? He overswept.</h1>
-            
+
         </div>
-        <button id="btnSeguent" onclick="otroChiste()">Següent acudit</button> 
+        <button id="btnSeguent" onclick="otroChiste()">Següent acudit</button>
+
+        <div>
+            <!-- Puntuación -->
+            <button id='btnScore1'>No m'agrada</button>
+            <button id='btnScore2'>Està bé</button>
+            <button id='btnScore3'>M'encanta</button>
+
+        </div>
+
+
     </div>
     <script src="./build/index.js"></script>
 </body>
+
 </html>
